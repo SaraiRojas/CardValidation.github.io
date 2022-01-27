@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap');
+
+:root{
+    --bck-color: #f1f9f9;
+    --btn-color: #93D3D2;
+    --valid-color: #04AD1F;
+    --invalid-color: #EE3132;
+    --warning-color: #DFC022;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: var(--bck-color);
+    width: 100%;
+    height: 100%;
+}
+
+
+#leftBox{
+    position: absolute;
+    width: 52%;
+    height: 99.8%;
+}
+
+header{
+    height: 15%;
+}
+
+#logo{
+    float: left;
+    width: 43%;
+    height: 99.5%;
+    background-image: url("images/logo.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;/* Primer argumento es la coordenada X y el segundo la Y*/
+    background-position-y: 55%;
+}
+
+#options{
+    float: left;
+    align-content: center;
+    width: 57%;
+    height: 99.5%;
+}
+
+#logIn{
+    float: right;
+    padding-left: 6.55%;
+    width: 37.5%;
+    height: 100%;
+}
+
+#logIn input[type="button"]{
+    width: 89px;
+    height: 32px;
+    background: var(--btn-color);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav{
+    float: left;
+    padding-left: 20%;
+    width: 62%;
+    height: 100%;
+}
+
+header input{
+    position: absolute;
+    top: 6%;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 8px 0px 8px;
+    list-style-type: none;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 104px;
+}
+
+li:hover {
+    transform: scale(1.2, 1.2);
+    text-shadow: 0 0 0.01px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    height: 75%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 64px;
+    width: 550px;
+    height: 123px;
+    margin-bottom: 45px;
+}
+
+h2{
+    width: 386px;
+    height: 77px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#text p{
+    width: 300px;
+    height: 29px;
+    font-weight: Extra-light;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+
+input[type="text"]{
+    width: 380px;
+    height: 39px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#validation input[type="button"]{
+    width: 100px;
+    height: 39px;
+    background: var(--btn-color);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-left: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#validation input[type="button"]:hover, #logIn input[type="button"]:hover{
+    filter: brightness(0.9);
+    transition: 150ms linear;
+}
+
+#result{
+    margin-top: 20px;
+    border: 4px solid;
+    border-color: var(--valid-color);
+    width: 515px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    color: var(--valid-color);
+    font-weight: bold;
+    display: none;
+}
+    
+
+footer{
+    height: 10%;
+    padding-left: 10%;
+}
+
+footer p{
+    position: absolute;
+    bottom: 6%;
+    font-size: 9px;
+}
+
+#image{
+    position: absolute;
+    right: 0px;
+    width: 48%;
+    height: 99.9%;
+    background-image: url("images/smiling-girl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
